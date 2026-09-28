@@ -1,17 +1,19 @@
 {
-  "name": "scraper",
+  "name": "polite-scraper",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "FlyRank Internship — Backend Track — W5 A9 — a polite scraper for Books to Scrape",
+  "type": "module",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "start:with-fake-url": "node src/index.js --with-fake-url",
+    "test": "node --test test/"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
   "dependencies": {
-    "cheerio": "^1.2.0",
-    "zod": "^4.6.5"
+    "cheerio": "^1.0.0",
+    "zod": "^3.23.8"
   }
 }
